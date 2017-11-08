@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+<html ng-app="App">
+<head>
+    <meta charset="utf-8" />
+    <title>Leilao</title>
+    <script src="Scripts/angular.min.js"></script>
+    <script src="Scripts/angular-route.min.js"></script>
+    <link href="Content/bootstrap-theme.min.css" rel="stylesheet" type="text/css" />
+    <link href="Content/bootstrap-theme.min.css.map" rel="stylesheet" type="text/css" />
+    <link href="Content/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="Content/bootstrap.min.css.map" rel="stylesheet" type="text/css" />
+    <script src="assets/js/app.js"></script>
+    <script src="routes.js"></script>
+    <script src="assets/public/leilao/leilaoService.js"></script>
+    <script src="assets/public/leilao/leilaoGrid.js"></script>
+    <script src="assets/public/leilao/leilaoDetails.js"></script>
+</head>
+<body ng-controller="leilaoGridCtrl">
+
+    <div class="row" style="height:60px">
+        <div class="container">
+            <div class="col-md-6">
+                <a><img src="justice.png" alt="Alguma imagem"></a>
+            </div>
+            <div class="col-md-6">
+                <a href="#" style="float:right; margin-top:10px" class="btn btn-primary btn-lg" role="button">Registrar-se</a>
+                <a href="#" style="float:right; margin-top:10px; margin-right:6px" class="btn btn-primary btn-lg" role="button">Login</a>
+            </div>
+
+        </div>
+    </div>
+    <nav class="navbar navbar-default" role="navigation">
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <!--<li class="active"><a href="#">Link</a></li>-->
+                <li><a href="#">Primeiro link</a></li>
+                <li><a href="" ng-click="goDetails()">Ir para Detalhes</a></li>
+            </ul>
+        </div><!-- /.navbar-collapse -->
+    </nav>
+    <div ng-view></div>
+</body>
+</html>
