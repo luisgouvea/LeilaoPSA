@@ -11,6 +11,12 @@
 
         //$locationProvider.html5Mode(true);
         $routeProvider
+            .when('/leilaoRegistrar', {
+                templateUrl: 'assets/public/leilao/leilaoRegistrar.html',
+            })
+            .when('/leilaoLogin', {
+                templateUrl: 'assets/public/leilao/leilaoLogin.html',
+            })
             .when('/leilao/:codLeilao?', {
                 templateUrl: 'assets/public/leilao/leilaoDetails.html',
             })

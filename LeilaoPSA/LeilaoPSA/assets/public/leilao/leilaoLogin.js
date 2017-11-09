@@ -1,20 +1,20 @@
 ﻿; (function () {
 
     angular.module('App')
-        .controller("leilaoGridCtrl", leilaoGridCtrl)
+        .controller("leilaoLoginCtrl", leilaoLoginCtrl)
 
-    leilaoGridCtrl.$inject = ['$scope', 'leilaoService', '$location', '$route'];
+    leilaoLoginCtrl.$inject = ['$scope', 'leilaoService', '$location', '$route'];
 
-    function leilaoGridCtrl($scope, leilaoService, $location, $route) {
-        InicializaFuncoesEmissaoCTe($scope, leilaoService , $location, $route);
+    function leilaoLoginCtrl($scope, leilaoService, $location, $route) {
+        InicializaFuncoesEmissaoCTe($scope, leilaoService, $location, $route);
         //InicializaFuncoesEmissaoCTe($scope, cteService, ModalService, $route, $location, SweetAlert, $routeParams, toastr);
         //InicializaModeloEmissaoCTe($scope, $routeParams, cteService, SweetAlert);
         //InicializaPartialEmissaoCTe($scope, $controller, cteService, ModalService, $http, toastr, $filter, SweetAlert, $route);
 
     }
-    
+
     function InicializaModeloEmissaoCTe($scope, $routeParams, cteService, SweetAlert) {
-        
+
         // Visualizar ou Editar
         if ($routeParams.codCTe && $routeParams.codCTe > 0) {
 
@@ -106,26 +106,15 @@
 
     function InicializaPartialEmissaoCTe($scope, $controller, cteService, ModalService, $http, toastr, $filter, SweetAlert, $route) {
         $scope.part_Dados = "assets/public/cte/Dados/part_Dados.html";
-        
+
         EmitenteExtension($scope, cteService);
         DadosCTeOSExtension($scope, cteService, ModalService, SweetAlert, toastr, $filter);
     }
 
     function InicializaFuncoesEmissaoCTe($scope, leilaoService, $location, $route) {
 
-        //Change controllers
-        $scope.goDetails = function () {
-            $location.url('/leilao');
-            //$location.url('/cte?codCTe=' + id);
+        $scope.AutenticarUsuario = function () {
+           //logica de autenticacao 
         }
-
-        $scope.CarregarLogin = function () {
-            $location.url('/leilaoLogin');
-        }
-
-        $scope.CarregarRegistrarConta = function () {
-            $location.url('/leilaoRegistrar');
-        }
-        //Change controllers
     }
 })();

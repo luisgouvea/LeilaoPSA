@@ -67,11 +67,16 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+    <Content Include="assets\css\LeilaologinRegistrar.css" />
     <Content Include="assets\js\app.js" />
     <Content Include="assets\public\leilao\leilaoDetails.html" />
     <Content Include="assets\public\leilao\leilaoDetails.js" />
     <Content Include="assets\public\leilao\leilaoGrid.html" />
     <Content Include="assets\public\leilao\leilaoGrid.js" />
+    <Content Include="assets\public\leilao\leilaoLogin.html" />
+    <Content Include="assets\public\leilao\leilaoLogin.js" />
+    <Content Include="assets\public\leilao\leilaoRegistrar.html" />
+    <Content Include="assets\public\leilao\leilaoRegistrar.js" />
     <Content Include="assets\public\leilao\leilaoService.js" />
     <Content Include="justice.png" />
     <Content Include="routes.js" />

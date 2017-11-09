@@ -1,0 +1,45 @@
+﻿<div class="container" ng-controller="leilaoRegistrarCtrl">
+    <div class="row">
+        <div class="col-xs-12 col-sm-8 col-md-6 col-sm-offset-2 col-md-offset-3">
+            <form role="form">
+                <h2>Crie uma conta <small>É gratuito e sempre será.</small></h2>
+                <hr class="colorgraph">
+                <div class="form-group">
+                    <input type="text" name="display_name" id="display_name" class="form-control input-lg" placeholder="Nome" tabindex="3">
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-6 col-md-6">
+                        <div class="form-group">
+                            <select class="form-control input-lg" ng-change="VerificaTipoDocumento()" ng-options="item.tipo as item.tipo for item in DadosAuxiliarRegistrar.CheckBoxDocumento" ng-model="ModelRegistrarConta.TipoDocumento"></select>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-6">
+                        <div class="form-group">
+                            <input type="text" name="last_name" id="last_name" class="form-control input-lg" placeholder="{{DadosAuxiliarRegistrar.LabelDocumento}}"  ng-model="ModelRegistrarConta.ItemDocumento" tabindex="2">
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <input type="email" name="email" id="email" class="form-control input-lg" placeholder="Email" tabindex="4">
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-6 col-md-6">
+                        <div class="form-group">
+                            <input type="password" name="password" id="password" class="form-control input-lg" placeholder="Senha" tabindex="5">
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-6">
+                        <div class="form-group">
+                            <input type="password" name="password_confirmation" id="password_confirmation" class="form-control input-lg" placeholder="Confirmar Senha" tabindex="6">
+                        </div>
+                    </div>
+                </div>
+                
+                <hr class="colorgraph">
+                <div class="row">
+                    <div class="col-xs-12 col-md-12"><input type="submit" value="Criar" ng-click="RegistrarUsuario()" class="btn btn-primary btn-block btn-lg" tabindex="7"></div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
