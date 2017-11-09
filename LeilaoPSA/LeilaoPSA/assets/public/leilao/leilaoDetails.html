@@ -1,5 +1,5 @@
 ﻿<div id="contentLeilaoDetails" ng-controller="leilaoDetailsCtrl">
-    <div class="container">
+    <!--<div class="container">
         <div class="row">
             <div class="col-md-6">
                 <div class="card">
@@ -18,5 +18,26 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div>-->
+
+    <section id="detailsLeilao">
+        <div class="row">
+            <div class="col-md-12">
+                <ul class="nav nav-tabs nav-sm mg-b-sm no-brd-b" role="tablist">
+                    <li id="abaDados" ng-class="{'active' : tabEmissao=='dados'}"><a data-unblockable ng-click="tabEmissao='dados'" class="bg-info">Dados</a></li>
+                    <li id="abaLances" ng-class="{'active' : tabEmissao=='lances'}"><a data-unblockable ng-click="tabEmissao='lances'" class="bg-info">Lances</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="tab-container">
+                    <div class="tab-content" ng-show="tabEmissao == 'dados'">
+                        <!--<div ng-include="part_Dados"></div>-->
+                        <button>das</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 </div>

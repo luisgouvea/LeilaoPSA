@@ -78,7 +78,7 @@
     <Content Include="assets\public\leilao\leilaoRegistrar.html" />
     <Content Include="assets\public\leilao\leilaoRegistrar.js" />
     <Content Include="assets\public\leilao\leilaoService.js" />
-    <Content Include="justice.png" />
+    <Content Include="assets\imagens\justice.png" />
     <Content Include="routes.js" />
     <Content Include="Scripts\version.json" />
     <Content Include="Scripts\errors.json" />
