@@ -4,7 +4,12 @@
 leilaoService.$inject = ['$http', '$filter'];
 
 function leilaoService($http, $filter) {
-        
+
+
+    this.Autenticar = function (DadosUsuario) {
+        return $http.post(url('/api/Teste/Comunicar'));
+    }
+
     // Exportar MDFes
     this.ExportarCtes = function (lstCtes) {
         return $http.post(url('/api/Cte/ExportarLista', 'cte'), lstCtes);

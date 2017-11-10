@@ -127,5 +127,16 @@
             $location.url('/leilaoRegistrar');
         }
         //Change controllers
+
+
+        $scope.AutenticarUsuario = function () {
+            leilaoService.Autenticar($scope.DadosAuxiliaresUsuario).then(function (responseSucess) {
+                alert(teste);
+                var teste = responseSucess.data;
+                alert(teste);
+            }).catch(function (error) {
+                alert("Ocorreu um erro na autenticação");
+            });
+        }
     }
 })();

@@ -113,8 +113,8 @@
 
     function InicializaFuncoesEmissaoCTe($scope, leilaoService, $location, $route) {
 
-        $scope.AutenticarUsuario = function () {
-           //logica de autenticacao 
+        $scope.BtnAutenticarUsuario = function () {
+            $scope.$parent.$parent.AutenticarUsuario();
         }
     }
 })();
