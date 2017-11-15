@@ -9,8 +9,14 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LeilaoPSA", "LeilaoPSA\Leil
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LeilaoAPI", "LeilaoAPI\LeilaoAPI.csproj", "{EDCE699E-3CD9-4888-9AAC-CE9FA494C12E}"
+	ProjectSection(ProjectDependencies) = postProject
+		{77196372-7D8D-4A54-BB7E-9D828D430187} = {77196372-7D8D-4A54-BB7E-9D828D430187}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Negocio", "Negocio\Negocio.csproj", "{77196372-7D8D-4A54-BB7E-9D828D430187}"
+	ProjectSection(ProjectDependencies) = postProject
+		{6C3BCC66-A1B3-4F0B-9813-3D602EEAF0AB} = {6C3BCC66-A1B3-4F0B-9813-3D602EEAF0AB}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Persistencia", "Persistencia\Persistencia.csproj", "{6C3BCC66-A1B3-4F0B-9813-3D602EEAF0AB}"
 EndProject
