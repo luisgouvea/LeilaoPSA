@@ -24,12 +24,15 @@
         </div>
     </div>-->
     <div class="row">
-        <div class="col-sm-6 col-md-4">
+        <div ng-repeat="leilao in grid.rows" class="col-sm-6 col-md-4">
             <div class="thumbnail">
-                <a href="" ng-click="goDetails()"><img src="https://unsplash.it/500/300?image=0" alt="Alguma imagem"></a>
+                <a href="" ng-click="DetailsLeilao(leilao.id_leilao)"><img src="https://unsplash.it/500/300?image=0" alt="Alguma imagem"></a>
                 <div class="caption">
-                    <h3>Thumbnail label</h3>
-                    <p>Descrição básica</p>
+                    <!--<h3>Thumbnail label</h3>
+                    <p>Descrição básica</p>-->
+                    <h3>{{Leilao $index}}</h3>
+                    <p>{{Data Inicio: leilao.dtInicio}}</p>
+                    <p>{{Data Fim: leilao.dtFim}}</p>
                 </div>
             </div>
         </div>

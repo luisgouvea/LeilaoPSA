@@ -10,6 +10,11 @@ function leilaoService($http, $filter) {
         return $http.post(url('/api/Teste/Comunicar'));
     }
 
+    // Listar Leiloes
+    this.Listar = function (ModelGrid) {
+        return $http.post(url('/api/Cte/Listar'), ModelGrid);
+    }
+
     // Exportar MDFes
     this.ExportarCtes = function (lstCtes) {
         return $http.post(url('/api/Cte/ExportarLista', 'cte'), lstCtes);

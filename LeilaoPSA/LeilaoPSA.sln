@@ -4,6 +4,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 15.0.27004.2005
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LeilaoPSA", "LeilaoPSA\LeilaoPSA.csproj", "{1D9DC487-F08A-499E-BBAB-D64D70548C49}"
+	ProjectSection(ProjectDependencies) = postProject
+		{EDCE699E-3CD9-4888-9AAC-CE9FA494C12E} = {EDCE699E-3CD9-4888-9AAC-CE9FA494C12E}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LeilaoAPI", "LeilaoAPI\LeilaoAPI.csproj", "{EDCE699E-3CD9-4888-9AAC-CE9FA494C12E}"
 EndProject
