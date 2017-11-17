@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+using Persistencia;
 namespace Negocio
 {
     public class LeilaoFachada
@@ -15,9 +15,14 @@ namespace Negocio
             gerenciadorUsuario = new GerenciadorUsuario();
         }
 
-        public Persistencia.Usuario Autenticar()
+        public Usuario AutenticarUsuario(string email)
         {
-            return gerenciadorUsuario.Autenticar();
+            return gerenciadorUsuario.Autenticar(email);
+        }
+
+        public bool RegistrarUsuario(Usuario usuario)
+        {
+            return gerenciadorUsuario.Registrar(usuario);
         }
     }
 }

@@ -9,20 +9,38 @@ namespace Persistencia.DAO
     public class UsuarioDAO
     {
         private System.Data.Entity.DbSet<Usuario> usuarioContext;
+        private static MapeamentoDbContext dataBase;
 
-        public UsuarioDAO(System.Data.Entity.DbSet<Usuario> usuarios)
+        public UsuarioDAO(MapeamentoDbContext db, System.Data.Entity.DbSet<Usuario> usuarios)
         {
             usuarioContext = usuarios;
+            dataBase = db;
         }
 
-        public Usuario getUsuario()
+        public Usuario getUsuario(Usuario usuarioTemp)
         {
-            Usuario usuario = usuarioContext.Find(1);
-            if(usuario != null)
+            string emailTarget = usuarioTemp.emaill;
+            var usuario = usuarioContext.Where(s => (s.emaill.Contains(emailTarget)));
+            if (usuario != null)
             {
-                return usuario;
+                return usuario.First();
             }
             return null;
+        }
+
+        public bool addUsuario(Usuario usuario)
+        {
+            try
+            {
+                usuarioContext.Add(usuario);
+                dataBase.SaveChanges();
+                return true;
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.Message);
+                return false;
+            }
         }
     }
 }

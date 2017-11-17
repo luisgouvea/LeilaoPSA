@@ -4,18 +4,27 @@ using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Web.Http;
+using Persistencia;
+using Negocio;
 
 namespace LeilaoAPI.Controllers
 {
     public class UsuarioController : ApiController
     {
         [HttpGet]
-        public HttpResponseMessage Autenticar()
+        public HttpResponseMessage Autenticar(string email)
         {
             Negocio.LeilaoFachada leilaoFachada = new Negocio.LeilaoFachada();
-            Persistencia.Usuario usuario =  leilaoFachada.Autenticar();
+            Usuario usuario =  leilaoFachada.AutenticarUsuario(email);
+            return Request.CreateResponse(HttpStatusCode.OK, usuario);
+        }
 
-            return Request.CreateResponse(HttpStatusCode.OK, "Nome do usuario do banco: " + usuario.nome);
+        [HttpPost]
+        public HttpResponseMessage Registrar(Usuario usuario)
+        {
+            LeilaoFachada leilaoFachada = new LeilaoFachada();
+            bool registrou = leilaoFachada.RegistrarUsuario(usuario);
+            return Request.CreateResponse(HttpStatusCode.OK, registrou);
         }
     }
 }

@@ -9,17 +9,22 @@ namespace Persistencia
 {
     public class GerenciadorDB
     {
-        private MapeamentoDbContext db = new MapeamentoDbContext();
+        private static MapeamentoDbContext db = new MapeamentoDbContext();
         private UsuarioDAO usuarioDAO;
         public GerenciadorDB()
         {
-            usuarioDAO = new UsuarioDAO(db.Usuario);
+            usuarioDAO = new UsuarioDAO(db, db.Usuario);
         }
 
         #region UsuarioDAO
-        public Usuario getUsuario()
+        public Usuario getUsuario(Usuario usuarioTemp)
         {
-            return usuarioDAO.getUsuario();
+            return usuarioDAO.getUsuario(usuarioTemp);
+        }
+
+        public bool addUsuario(Usuario usuario)
+        {
+            return usuarioDAO.addUsuario(usuario);
         }
         #endregion
     }
