@@ -11,9 +11,11 @@ namespace Persistencia
     {
         private static MapeamentoDbContext db = new MapeamentoDbContext();
         private UsuarioDAO usuarioDAO;
+        private LeilaoDAO leilaoDAO;
         public GerenciadorDB()
         {
             usuarioDAO = new UsuarioDAO(db, db.Usuario);
+            leilaoDAO = new LeilaoDAO(db, db.Leilao);
         }
 
         #region UsuarioDAO
@@ -25,6 +27,13 @@ namespace Persistencia
         public bool addUsuario(Usuario usuario)
         {
             return usuarioDAO.addUsuario(usuario);
+        }
+        #endregion
+
+        #region LeilaoDAO
+        public bool addLeilao(Leilao leilao)
+        {
+            return leilaoDAO.addLeilao(leilao);
         }
         #endregion
     }

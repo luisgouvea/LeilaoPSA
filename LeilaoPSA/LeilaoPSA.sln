@@ -3,11 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27004.2005
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LeilaoPSA", "LeilaoPSA\LeilaoPSA.csproj", "{1D9DC487-F08A-499E-BBAB-D64D70548C49}"
-	ProjectSection(ProjectDependencies) = postProject
-		{EDCE699E-3CD9-4888-9AAC-CE9FA494C12E} = {EDCE699E-3CD9-4888-9AAC-CE9FA494C12E}
-	EndProjectSection
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LeilaoAPI", "LeilaoAPI\LeilaoAPI.csproj", "{EDCE699E-3CD9-4888-9AAC-CE9FA494C12E}"
 	ProjectSection(ProjectDependencies) = postProject
 		{77196372-7D8D-4A54-BB7E-9D828D430187} = {77196372-7D8D-4A54-BB7E-9D828D430187}
@@ -26,10 +21,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{1D9DC487-F08A-499E-BBAB-D64D70548C49}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{1D9DC487-F08A-499E-BBAB-D64D70548C49}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{1D9DC487-F08A-499E-BBAB-D64D70548C49}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{1D9DC487-F08A-499E-BBAB-D64D70548C49}.Release|Any CPU.Build.0 = Release|Any CPU
 		{EDCE699E-3CD9-4888-9AAC-CE9FA494C12E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{EDCE699E-3CD9-4888-9AAC-CE9FA494C12E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EDCE699E-3CD9-4888-9AAC-CE9FA494C12E}.Release|Any CPU.ActiveCfg = Release|Any CPU

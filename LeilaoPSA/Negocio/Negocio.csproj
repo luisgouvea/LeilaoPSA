@@ -43,7 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
+    <Compile Include="GerenciadorLeilao.cs" />
     <Compile Include="GerenciadorUsuario.cs" />
     <Compile Include="LeilaoFachada.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

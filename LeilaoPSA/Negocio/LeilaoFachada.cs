@@ -9,12 +9,15 @@ namespace Negocio
     public class LeilaoFachada
     {
         private GerenciadorUsuario gerenciadorUsuario;
+        private GerenciadorLeilao gerenciadorLeilao;
 
         public LeilaoFachada()
         {
             gerenciadorUsuario = new GerenciadorUsuario();
+            gerenciadorLeilao = new GerenciadorLeilao();
         }
 
+        #region - UsuarioController
         public Usuario AutenticarUsuario(string email)
         {
             return gerenciadorUsuario.Autenticar(email);
@@ -24,5 +27,13 @@ namespace Negocio
         {
             return gerenciadorUsuario.Registrar(usuario);
         }
+        #endregion
+
+        #region - LeilaoController
+        public bool CriarLeilao(Leilao leilao)
+        {
+            return gerenciadorLeilao.CriarLeilao(leilao);
+        }
+        #endregion
     }
 }

@@ -14,7 +14,7 @@ namespace LeilaoAPI.Controllers
         [HttpGet]
         public HttpResponseMessage Autenticar(string email)
         {
-            Negocio.LeilaoFachada leilaoFachada = new Negocio.LeilaoFachada();
+            LeilaoFachada leilaoFachada = new LeilaoFachada();
             Usuario usuario =  leilaoFachada.AutenticarUsuario(email);
             return Request.CreateResponse(HttpStatusCode.OK, usuario);
         }
