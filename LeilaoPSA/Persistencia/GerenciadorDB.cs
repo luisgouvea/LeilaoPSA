@@ -28,12 +28,26 @@ namespace Persistencia
         {
             return usuarioDAO.addUsuario(usuario);
         }
+
         #endregion
 
         #region LeilaoDAO
         public bool addLeilao(Leilao leilao)
         {
             return leilaoDAO.addLeilao(leilao);
+        }
+
+        public List<Leilao> getAllLeilao()
+        {
+            return leilaoDAO.getAllLeilao();
+        }
+        #endregion
+
+        #region LoteDAO
+        public bool addLote(Lote lote)
+        {
+            //return loteDAO.addLote(leilao);
+            return false;
         }
         #endregion
     }

@@ -31,5 +31,10 @@ namespace Persistencia.DAO
                 return false;
             }
         }
+
+        public List<Leilao> getAllLeilao()
+        {
+            return leilaoContext.ToList();
+        }
     }
 }

@@ -44,6 +44,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="GerenciadorLeilao.cs" />
+    <Compile Include="GerenciadorLote.cs" />
     <Compile Include="GerenciadorUsuario.cs" />
     <Compile Include="LeilaoFachada.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

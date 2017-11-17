@@ -9,22 +9,22 @@ using Negocio;
 
 namespace LeilaoAPI.Controllers
 {
-    public class LeilaoController : ApiController
+    public class LoteController : ApiController
     {
         [HttpPost]
-        public HttpResponseMessage CriarLeilao(Leilao leilao)
+        public HttpResponseMessage CriarLote(Lote lote)
         {
             LeilaoFachada leilaoFachada = new LeilaoFachada();
-            bool criou = leilaoFachada.CriarLeilao(leilao);
+            bool criou = leilaoFachada.CriarLote(lote);
             return Request.CreateResponse(HttpStatusCode.OK, criou);
         }
 
         [HttpGet]
-        public HttpResponseMessage ListarTodosLeilao()
+        public HttpResponseMessage ListarTodosLeilaoDisponivel(int idUsuario)
         {
             LeilaoFachada leilaoFachada = new LeilaoFachada();
-            List<Leilao> listaLeilao = leilaoFachada.ListarTodosLeilao();
-            return Request.CreateResponse(HttpStatusCode.OK, listaLeilao);
+            List<Lote> listaLote = leilaoFachada.ListarTodosLotesDisponivel(idUsuario);
+            return Request.CreateResponse(HttpStatusCode.OK, listaLote);
         }
     }
 }

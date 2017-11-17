@@ -23,5 +23,10 @@ namespace Negocio
             }
             return false;
         }
+
+        public List<Leilao> ListarTodosLeilao()
+        {
+            return gerenciadorDB.getAllLeilao();
+        }
     }
 }
