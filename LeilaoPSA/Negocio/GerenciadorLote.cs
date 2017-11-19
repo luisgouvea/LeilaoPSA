@@ -24,8 +24,7 @@ namespace Negocio
 
         public List<Lote> ListarTodosLotesDisponivel(int idUsuario)
         {
-            //return gerenciadorDB.getLotesByStatusDisponivel(idUsuario);
-            return null;
+            return gerenciadorDB.getLotesByStatusDisponivel(idUsuario);
         }
     }
 }

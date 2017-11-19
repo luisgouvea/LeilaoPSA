@@ -9,12 +9,12 @@ namespace Persistencia
     [Table("Lote")]
     public partial class Lote
     {
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public Lote()
-        {
-            Leilao = new HashSet<Leilao>();
-            LoteBem = new HashSet<LoteBem>();
-        }
+        //[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
+        //public Lote()
+        //{
+        //    Leilao = new HashSet<Leilao>();
+        //    LoteBem = new HashSet<LoteBem>();
+        //}
 
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.None)]

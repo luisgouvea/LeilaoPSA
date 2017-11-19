@@ -43,10 +43,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="GerenciadorLance.cs" />
     <Compile Include="GerenciadorLeilao.cs" />
     <Compile Include="GerenciadorLote.cs" />
     <Compile Include="GerenciadorUsuario.cs" />
     <Compile Include="LeilaoFachada.cs" />
+    <Compile Include="LogicaLeilao\Factory\ILeilaoRegra.cs" />
+    <Compile Include="LogicaLeilao\Factory\LeilaoDemandaAberto.cs" />
+    <Compile Include="LogicaLeilao\Factory\LeilaoDemandaFechado.cs" />
+    <Compile Include="LogicaLeilao\Factory\LeilaoFactory.cs" />
+    <Compile Include="LogicaLeilao\Factory\LeilaoOfertaAberto.cs" />
+    <Compile Include="LogicaLeilao\Factory\LeilaoOfertaFechado.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

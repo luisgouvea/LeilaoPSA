@@ -11,12 +11,14 @@ namespace Negocio
         private GerenciadorUsuario gerenciadorUsuario;
         private GerenciadorLeilao gerenciadorLeilao;
         private GerenciadorLote gerenciadorLote;
+        private GerenciadorLance gerenciadorLance;
 
         public LeilaoFachada()
         {
             gerenciadorUsuario = new GerenciadorUsuario();
             gerenciadorLeilao = new GerenciadorLeilao();
             gerenciadorLote = new GerenciadorLote();
+            gerenciadorLance = new GerenciadorLance();
         }
 
         #region - UsuarioController
@@ -53,6 +55,18 @@ namespace Negocio
         public List<Lote> ListarTodosLotesDisponivel(int idUsuario)
         {
             return gerenciadorLote.ListarTodosLotesDisponivel(idUsuario);
+        }
+        #endregion
+
+        #region - Lance
+        public bool CriarLance(Lance lance)
+        {
+            return gerenciadorLance.CriarLance(lance);
+        }
+
+        public List<Lance> ListarTodosLanceByLeilao(int idLeilao)
+        {
+            return gerenciadorLance.ListarTodosLanceByLeilao(idLeilao);
         }
         #endregion
     }

@@ -14,11 +14,13 @@ namespace Negocio
         {
             gerenciadorDB = new GerenciadorDB();
         }
-        public bool CriarLeilao(Leilao leilao)
+        public bool CriarLeilao(Persistencia.Leilao leilao)
         {
             if (leilao != null)
             {
                 // logica - Factory para criar o Leilao
+                LogicaLeilao.Factory.LeilaoFactory leilaoFactory = new LogicaLeilao.Factory.LeilaoFactory();
+                Leilao leiaoParaCriar =  leilaoFactory.InstanceLeilao(leilao);
                 return gerenciadorDB.addLeilao(leilao);
             }
             return false;

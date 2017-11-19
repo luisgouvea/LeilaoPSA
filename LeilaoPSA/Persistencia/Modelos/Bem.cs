@@ -9,11 +9,11 @@ namespace Persistencia
     [Table("Bem")]
     public partial class Bem
     {
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public Bem()
-        {
-            LoteBem = new HashSet<LoteBem>();
-        }
+        //[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
+        //public Bem()
+        //{
+        //    LoteBem = new HashSet<LoteBem>();
+        //}
 
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.None)]

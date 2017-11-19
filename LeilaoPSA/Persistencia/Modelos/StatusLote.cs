@@ -9,11 +9,11 @@ namespace Persistencia
     [Table("StatusLote")]
     public partial class StatusLote
     {
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public StatusLote()
-        {
-            Lote = new HashSet<Lote>();
-        }
+        //[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
+        //public StatusLote()
+        //{
+        //    Lote = new HashSet<Lote>();
+        //}
 
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.None)]

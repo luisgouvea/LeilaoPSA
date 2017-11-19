@@ -6,6 +6,8 @@ using System.Net.Http;
 using System.Web.Http;
 using Persistencia;
 using Negocio;
+using Newtonsoft.Json;
+using System.IO;
 
 namespace LeilaoAPI.Controllers
 {
@@ -14,17 +16,35 @@ namespace LeilaoAPI.Controllers
         [HttpGet]
         public HttpResponseMessage Autenticar(string email)
         {
-            LeilaoFachada leilaoFachada = new LeilaoFachada();
-            Usuario usuario =  leilaoFachada.AutenticarUsuario(email);
-            return Request.CreateResponse(HttpStatusCode.OK, usuario);
+            try
+            {
+                LeilaoFachada leilaoFachada = new LeilaoFachada();
+                Usuario usuario = leilaoFachada.AutenticarUsuario(email);
+                return Request.CreateResponse(HttpStatusCode.OK, usuario);
+            }
+            catch (Exception ex)
+            {
+                //Loggin log = new Loggin();
+                //log.criarMensagem(ex);
+                return Request.CreateResponse(HttpStatusCode.BadRequest, ex.Message);
+            }
         }
 
         [HttpPost]
         public HttpResponseMessage Registrar(Usuario usuario)
         {
-            LeilaoFachada leilaoFachada = new LeilaoFachada();
-            bool registrou = leilaoFachada.RegistrarUsuario(usuario);
-            return Request.CreateResponse(HttpStatusCode.OK, registrou);
+            try
+            {
+                LeilaoFachada leilaoFachada = new LeilaoFachada();
+                bool registrou = leilaoFachada.RegistrarUsuario(usuario);
+                return Request.CreateResponse(HttpStatusCode.OK, registrou);
+            }
+            catch (Exception ex)
+            {
+                Loggin log = new Loggin();
+                log.criarMensagem(ex);
+                return Request.CreateResponse(HttpStatusCode.BadRequest, ex.Message);
+            }
         }
     }
 }

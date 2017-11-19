@@ -23,7 +23,7 @@ namespace Persistencia.DAO
             var usuario = usuarioContext.Where(s => (s.emaill.Contains(emailTarget)));
             if (usuario != null)
             {
-                return usuario.First();
+                return usuario.Cast<Usuario>().First();
             }
             return null;
         }
@@ -39,7 +39,7 @@ namespace Persistencia.DAO
             catch (Exception e)
             {
                 Console.WriteLine(e.Message);
-                return false;
+                throw new Exception("Não foi possivel inserir o usuario, erro: " + e.Message);
             }
         }
     }

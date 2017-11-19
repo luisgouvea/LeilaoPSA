@@ -12,10 +12,14 @@ namespace Persistencia
         private static MapeamentoDbContext db = new MapeamentoDbContext();
         private UsuarioDAO usuarioDAO;
         private LeilaoDAO leilaoDAO;
+        private LoteDAO loteDAO;
+        private LanceDAO lanceDAO;
         public GerenciadorDB()
         {
             usuarioDAO = new UsuarioDAO(db, db.Usuario);
             leilaoDAO = new LeilaoDAO(db, db.Leilao);
+            loteDAO = new LoteDAO(db, db.Lote);
+            lanceDAO = new LanceDAO(db, db.Lance);
         }
 
         #region UsuarioDAO
@@ -46,8 +50,24 @@ namespace Persistencia
         #region LoteDAO
         public bool addLote(Lote lote)
         {
-            //return loteDAO.addLote(leilao);
-            return false;
+            return loteDAO.addLote(lote);
+        }
+
+        public List<Lote> getLotesByStatusDisponivel(int idUsuario)
+        {
+            return loteDAO.getLotesByStatusDisponivel(idUsuario);
+        }
+        #endregion
+
+        #region Lance
+        public bool addLance(Lance lance)
+        {
+            return lanceDAO.addLance(lance);
+        }
+
+        public List<Lance> getLancesByIdLeilao(int idLeilao)
+        {
+            return lanceDAO.getLancesByIdLeilao(idLeilao);
         }
         #endregion
     }
