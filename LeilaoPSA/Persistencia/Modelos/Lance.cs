@@ -10,7 +10,7 @@ namespace Persistencia
     public partial class Lance
     {
         [Key]
-        [DatabaseGenerated(DatabaseGeneratedOption.None)]
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int id_lance { get; set; }
 
         public int? id_usuario { get; set; }

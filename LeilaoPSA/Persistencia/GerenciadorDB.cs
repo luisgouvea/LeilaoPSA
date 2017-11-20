@@ -14,12 +14,14 @@ namespace Persistencia
         private LeilaoDAO leilaoDAO;
         private LoteDAO loteDAO;
         private LanceDAO lanceDAO;
+        private LoteBemDAO loteBemDAO;
         public GerenciadorDB()
         {
             usuarioDAO = new UsuarioDAO(db, db.Usuario);
             leilaoDAO = new LeilaoDAO(db, db.Leilao);
             loteDAO = new LoteDAO(db, db.Lote);
             lanceDAO = new LanceDAO(db, db.Lance);
+            loteBemDAO = new LoteBemDAO(db, db.LoteBem);
         }
 
         #region UsuarioDAO
@@ -68,6 +70,13 @@ namespace Persistencia
         public List<Lance> getLancesByIdLeilao(int idLeilao)
         {
             return lanceDAO.getLancesByIdLeilao(idLeilao);
+        }
+        #endregion
+
+        #region LoteBem
+        public List<LoteBem> getLoteBensByIdLote(int idLote)
+        {
+            return loteBemDAO.getLoteBensByIdLote(idLote);
         }
         #endregion
     }

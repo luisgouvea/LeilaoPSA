@@ -103,6 +103,7 @@
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\LanceController.cs" />
     <Compile Include="Controllers\LeilaoController.cs" />
+    <Compile Include="Controllers\LoteBemController.cs" />
     <Compile Include="Controllers\LoteController.cs" />
     <Compile Include="Controllers\UsuarioController.cs" />
     <Compile Include="Global.asax.cs">

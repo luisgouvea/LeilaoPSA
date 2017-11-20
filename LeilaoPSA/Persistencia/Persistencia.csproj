@@ -51,6 +51,7 @@
   <ItemGroup>
     <Compile Include="DAO\LanceDAO.cs" />
     <Compile Include="DAO\LeilaoDAO.cs" />
+    <Compile Include="DAO\LoteBemDAO.cs" />
     <Compile Include="DAO\LoteDAO.cs" />
     <Compile Include="DAO\UsuarioDAO.cs" />
     <Compile Include="GerenciadorDB.cs" />

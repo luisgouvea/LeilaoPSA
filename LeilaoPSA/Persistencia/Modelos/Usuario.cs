@@ -38,6 +38,6 @@ namespace Persistencia
         public ICollection<Lance> Lance { get; set; }
 
         //[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public ICollection<Lote> Lote { get; set; }
+        //public ICollection<Lote> Lote { get; set; }
     }
 }

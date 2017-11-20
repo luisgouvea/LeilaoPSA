@@ -17,7 +17,7 @@ namespace Persistencia
         //}
 
         [Key]
-        [DatabaseGenerated(DatabaseGeneratedOption.None)]
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int id_lote { get; set; }
 
         public int? id_status_lote { get; set; }
@@ -27,14 +27,14 @@ namespace Persistencia
         [Column(TypeName = "money")]
         public decimal preco { get; set; }
 
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Leilao> Leilao { get; set; }
+        //[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        //public ICollection<Leilao> Leilao { get; set; }
 
         public virtual StatusLote StatusLote { get; set; }
 
         public virtual Usuario Usuario { get; set; }
 
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<LoteBem> LoteBem { get; set; }
+        //[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public ICollection<LoteBem> LoteBem { get; set; }
     }
 }

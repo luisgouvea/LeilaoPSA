@@ -12,10 +12,10 @@ namespace LeilaoAPI.Controllers
     public class LeilaoController : ApiController
     {
         [HttpPost]
-        public HttpResponseMessage CriarLeilao(Leilao leilao)
+        public HttpResponseMessage CriarLeilao(Leilao leilao, string natureza,  string formaLances)
         {
             LeilaoFachada leilaoFachada = new LeilaoFachada();
-            bool criou = leilaoFachada.CriarLeilao(leilao);
+            bool criou = leilaoFachada.CriarLeilao(leilao, natureza, formaLances);
             return Request.CreateResponse(HttpStatusCode.OK, criou);
         }
 

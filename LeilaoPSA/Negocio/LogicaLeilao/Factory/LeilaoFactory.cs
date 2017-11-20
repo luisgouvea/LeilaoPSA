@@ -9,24 +9,24 @@ namespace Negocio.LogicaLeilao.Factory
 {
     public class LeilaoFactory
     {
-        public Leilao InstanceLeilao(Leilao leilao)
+        public Leilao InstanceLeilao(Leilao leilao, string natureza, string formaLances)
         {
-            if (leilao.id_enum_natureza.Equals(2) && leilao.id_enum_forma_lances.Equals(1))
+            if (natureza.Equals("demanda") && formaLances.Equals("aberto"))
             {
                 LeilaoDemandaAberto leilaoDemandaAberto = new LeilaoDemandaAberto();
                 return leilaoDemandaAberto.DefineLeilao(leilao);
             }
-            else if (leilao.id_enum_natureza.Equals(2) && leilao.id_enum_forma_lances.Equals(2))
+            else if (natureza.Equals("demanda") && formaLances.Equals("fechado"))
             {
                 LeilaoDemandaFechado leilaoDemandaFechado = new LeilaoDemandaFechado();
                 return leilaoDemandaFechado.DefineLeilao(leilao);
             }
-            else if (leilao.id_enum_natureza.Equals(1) && leilao.id_enum_forma_lances.Equals(1))
+            else if (natureza.Equals("oferta") && formaLances.Equals("aberto"))
             {
                 LeilaoOfertaAberto leilaoOfertaAberto = new LeilaoOfertaAberto();
                 return leilaoOfertaAberto.DefineLeilao(leilao);
             }
-            else if (leilao.id_enum_natureza.Equals(1) && leilao.id_enum_forma_lances.Equals(2))
+            else if (natureza.Equals("oferta") && formaLances.Equals("fechado"))
             {
                 LeilaoOfertaFechado leilaoOfertaFechado = new LeilaoOfertaFechado();
                 return leilaoOfertaFechado.DefineLeilao(leilao);

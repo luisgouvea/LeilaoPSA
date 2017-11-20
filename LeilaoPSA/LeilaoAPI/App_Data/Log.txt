@@ -1,0 +1,111 @@
+Primeiro usuario
+Primeiro usuarioTime: 19/11/2017 03:46:00 
+-----------------------------------------------------------
+Message: Não foi possivel inserir:Validation failed for one or more entities. See 'EntityValidationErrors' property for more details.
+StackTrace:    em Persistencia.DAO.UsuarioDAO.addUsuario(Usuario usuario) na C:\PSA\LeilaoPSA\LeilaoPSA\Persistencia\DAO\UsuarioDAO.cs:linha 42
+   em Persistencia.GerenciadorDB.addUsuario(Usuario usuario) na C:\PSA\LeilaoPSA\LeilaoPSA\Persistencia\GerenciadorDB.cs:linha 33
+   em Negocio.GerenciadorUsuario.Registrar(Usuario usuario) na C:\PSA\LeilaoPSA\LeilaoPSA\Negocio\GerenciadorUsuario.cs:linha 32
+   em Negocio.LeilaoFachada.RegistrarUsuario(Usuario usuario) na C:\PSA\LeilaoPSA\LeilaoPSA\Negocio\LeilaoFachada.cs:linha 32
+   em LeilaoAPI.Controllers.UsuarioController.Registrar(Usuario usuario) na C:\PSA\LeilaoPSA\LeilaoPSA\LeilaoAPI\Controllers\UsuarioController.cs:linha 40
+Source: Persistencia
+TargetSite: Boolean addUsuario(Persistencia.Usuario)
+-----------------------------------------------------------
+Time: 19/11/2017 04:02:33 
+-----------------------------------------------------------
+Message: Não foi possivel inserir o usuario, erro: Validation failed for one or more entities. See 'EntityValidationErrors' property for more details.
+StackTrace:    em Persistencia.DAO.UsuarioDAO.addUsuario(Usuario usuario) na C:\PSA\LeilaoPSA\LeilaoPSA\Persistencia\DAO\UsuarioDAO.cs:linha 42
+   em Persistencia.GerenciadorDB.addUsuario(Usuario usuario) na C:\PSA\LeilaoPSA\LeilaoPSA\Persistencia\GerenciadorDB.cs:linha 33
+   em Negocio.GerenciadorUsuario.Registrar(Usuario usuario) na C:\PSA\LeilaoPSA\LeilaoPSA\Negocio\GerenciadorUsuario.cs:linha 32
+   em Negocio.LeilaoFachada.RegistrarUsuario(Usuario usuario) na C:\PSA\LeilaoPSA\LeilaoPSA\Negocio\LeilaoFachada.cs:linha 32
+   em LeilaoAPI.Controllers.UsuarioController.Registrar(Usuario usuario) na C:\PSA\LeilaoPSA\LeilaoPSA\LeilaoAPI\Controllers\UsuarioController.cs:linha 39
+Source: Persistencia
+TargetSite: Boolean addUsuario(Persistencia.Usuario)
+-----------------------------------------------------------
+Time: 19/11/2017 04:03:26 
+-----------------------------------------------------------
+Message: Não foi possivel inserir o usuario, erro: Validation failed for one or more entities. See 'EntityValidationErrors' property for more details.
+StackTrace:    em Persistencia.DAO.UsuarioDAO.addUsuario(Usuario usuario) na C:\PSA\LeilaoPSA\LeilaoPSA\Persistencia\DAO\UsuarioDAO.cs:linha 42
+   em Persistencia.GerenciadorDB.addUsuario(Usuario usuario) na C:\PSA\LeilaoPSA\LeilaoPSA\Persistencia\GerenciadorDB.cs:linha 33
+   em Negocio.GerenciadorUsuario.Registrar(Usuario usuario) na C:\PSA\LeilaoPSA\LeilaoPSA\Negocio\GerenciadorUsuario.cs:linha 32
+   em Negocio.LeilaoFachada.RegistrarUsuario(Usuario usuario) na C:\PSA\LeilaoPSA\LeilaoPSA\Negocio\LeilaoFachada.cs:linha 32
+   em LeilaoAPI.Controllers.UsuarioController.Registrar(Usuario usuario) na C:\PSA\LeilaoPSA\LeilaoPSA\LeilaoAPI\Controllers\UsuarioController.cs:linha 39
+Source: Persistencia
+TargetSite: Boolean addUsuario(Persistencia.Usuario)
+-----------------------------------------------------------
+Time: 19/11/2017 04:04:22 
+-----------------------------------------------------------
+Message: Não foi possivel inserir o usuario, erro: Validation failed for one or more entities. See 'EntityValidationErrors' property for more details.
+StackTrace:    em Persistencia.DAO.UsuarioDAO.addUsuario(Usuario usuario) na C:\PSA\LeilaoPSA\LeilaoPSA\Persistencia\DAO\UsuarioDAO.cs:linha 42
+   em Persistencia.GerenciadorDB.addUsuario(Usuario usuario) na C:\PSA\LeilaoPSA\LeilaoPSA\Persistencia\GerenciadorDB.cs:linha 33
+   em Negocio.GerenciadorUsuario.Registrar(Usuario usuario) na C:\PSA\LeilaoPSA\LeilaoPSA\Negocio\GerenciadorUsuario.cs:linha 32
+   em Negocio.LeilaoFachada.RegistrarUsuario(Usuario usuario) na C:\PSA\LeilaoPSA\LeilaoPSA\Negocio\LeilaoFachada.cs:linha 32
+   em LeilaoAPI.Controllers.UsuarioController.Registrar(Usuario usuario) na C:\PSA\LeilaoPSA\LeilaoPSA\LeilaoAPI\Controllers\UsuarioController.cs:linha 39
+Source: Persistencia
+TargetSite: Boolean addUsuario(Persistencia.Usuario)
+-----------------------------------------------------------
+Time: 19/11/2017 04:05:01 
+-----------------------------------------------------------
+Message: Não foi possivel inserir o usuario, erro: Validation failed for one or more entities. See 'EntityValidationErrors' property for more details.
+StackTrace:    em Persistencia.DAO.UsuarioDAO.addUsuario(Usuario usuario) na C:\PSA\LeilaoPSA\LeilaoPSA\Persistencia\DAO\UsuarioDAO.cs:linha 42
+   em Persistencia.GerenciadorDB.addUsuario(Usuario usuario) na C:\PSA\LeilaoPSA\LeilaoPSA\Persistencia\GerenciadorDB.cs:linha 33
+   em Negocio.GerenciadorUsuario.Registrar(Usuario usuario) na C:\PSA\LeilaoPSA\LeilaoPSA\Negocio\GerenciadorUsuario.cs:linha 32
+   em Negocio.LeilaoFachada.RegistrarUsuario(Usuario usuario) na C:\PSA\LeilaoPSA\LeilaoPSA\Negocio\LeilaoFachada.cs:linha 32
+   em LeilaoAPI.Controllers.UsuarioController.Registrar(Usuario usuario) na C:\PSA\LeilaoPSA\LeilaoPSA\LeilaoAPI\Controllers\UsuarioController.cs:linha 39
+Source: Persistencia
+TargetSite: Boolean addUsuario(Persistencia.Usuario)
+-----------------------------------------------------------
+Time: 19/11/2017 04:05:16 
+-----------------------------------------------------------
+Message: Não foi possivel inserir o usuario, erro: Validation failed for one or more entities. See 'EntityValidationErrors' property for more details.
+StackTrace:    em Persistencia.DAO.UsuarioDAO.addUsuario(Usuario usuario) na C:\PSA\LeilaoPSA\LeilaoPSA\Persistencia\DAO\UsuarioDAO.cs:linha 42
+   em Persistencia.GerenciadorDB.addUsuario(Usuario usuario) na C:\PSA\LeilaoPSA\LeilaoPSA\Persistencia\GerenciadorDB.cs:linha 33
+   em Negocio.GerenciadorUsuario.Registrar(Usuario usuario) na C:\PSA\LeilaoPSA\LeilaoPSA\Negocio\GerenciadorUsuario.cs:linha 32
+   em Negocio.LeilaoFachada.RegistrarUsuario(Usuario usuario) na C:\PSA\LeilaoPSA\LeilaoPSA\Negocio\LeilaoFachada.cs:linha 32
+   em LeilaoAPI.Controllers.UsuarioController.Registrar(Usuario usuario) na C:\PSA\LeilaoPSA\LeilaoPSA\LeilaoAPI\Controllers\UsuarioController.cs:linha 39
+Source: Persistencia
+TargetSite: Boolean addUsuario(Persistencia.Usuario)
+-----------------------------------------------------------
+Time: 19/11/2017 04:05:57 
+-----------------------------------------------------------
+Message: Não foi possivel inserir o usuario, erro: Validation failed for one or more entities. See 'EntityValidationErrors' property for more details.
+StackTrace:    em Persistencia.DAO.UsuarioDAO.addUsuario(Usuario usuario) na C:\PSA\LeilaoPSA\LeilaoPSA\Persistencia\DAO\UsuarioDAO.cs:linha 42
+   em Persistencia.GerenciadorDB.addUsuario(Usuario usuario) na C:\PSA\LeilaoPSA\LeilaoPSA\Persistencia\GerenciadorDB.cs:linha 33
+   em Negocio.GerenciadorUsuario.Registrar(Usuario usuario) na C:\PSA\LeilaoPSA\LeilaoPSA\Negocio\GerenciadorUsuario.cs:linha 32
+   em Negocio.LeilaoFachada.RegistrarUsuario(Usuario usuario) na C:\PSA\LeilaoPSA\LeilaoPSA\Negocio\LeilaoFachada.cs:linha 32
+   em LeilaoAPI.Controllers.UsuarioController.Registrar(Usuario usuario) na C:\PSA\LeilaoPSA\LeilaoPSA\LeilaoAPI\Controllers\UsuarioController.cs:linha 39
+Source: Persistencia
+TargetSite: Boolean addUsuario(Persistencia.Usuario)
+-----------------------------------------------------------
+Time: 19/11/2017 04:07:47 
+-----------------------------------------------------------
+Message: Não foi possivel inserir o usuario, erro: Validation failed for one or more entities. See 'EntityValidationErrors' property for more details.
+StackTrace:    em Persistencia.DAO.UsuarioDAO.addUsuario(Usuario usuario) na C:\PSA\LeilaoPSA\LeilaoPSA\Persistencia\DAO\UsuarioDAO.cs:linha 42
+   em Persistencia.GerenciadorDB.addUsuario(Usuario usuario) na C:\PSA\LeilaoPSA\LeilaoPSA\Persistencia\GerenciadorDB.cs:linha 33
+   em Negocio.GerenciadorUsuario.Registrar(Usuario usuario) na C:\PSA\LeilaoPSA\LeilaoPSA\Negocio\GerenciadorUsuario.cs:linha 32
+   em Negocio.LeilaoFachada.RegistrarUsuario(Usuario usuario) na C:\PSA\LeilaoPSA\LeilaoPSA\Negocio\LeilaoFachada.cs:linha 32
+   em LeilaoAPI.Controllers.UsuarioController.Registrar(Usuario usuario) na C:\PSA\LeilaoPSA\LeilaoPSA\LeilaoAPI\Controllers\UsuarioController.cs:linha 39
+Source: Persistencia
+TargetSite: Boolean addUsuario(Persistencia.Usuario)
+-----------------------------------------------------------
+Time: 19/11/2017 04:08:16 
+-----------------------------------------------------------
+Message: Não foi possivel inserir o usuario, erro: Validation failed for one or more entities. See 'EntityValidationErrors' property for more details.
+StackTrace:    em Persistencia.DAO.UsuarioDAO.addUsuario(Usuario usuario) na C:\PSA\LeilaoPSA\LeilaoPSA\Persistencia\DAO\UsuarioDAO.cs:linha 42
+   em Persistencia.GerenciadorDB.addUsuario(Usuario usuario) na C:\PSA\LeilaoPSA\LeilaoPSA\Persistencia\GerenciadorDB.cs:linha 33
+   em Negocio.GerenciadorUsuario.Registrar(Usuario usuario) na C:\PSA\LeilaoPSA\LeilaoPSA\Negocio\GerenciadorUsuario.cs:linha 32
+   em Negocio.LeilaoFachada.RegistrarUsuario(Usuario usuario) na C:\PSA\LeilaoPSA\LeilaoPSA\Negocio\LeilaoFachada.cs:linha 32
+   em LeilaoAPI.Controllers.UsuarioController.Registrar(Usuario usuario) na C:\PSA\LeilaoPSA\LeilaoPSA\LeilaoAPI\Controllers\UsuarioController.cs:linha 39
+Source: Persistencia
+TargetSite: Boolean addUsuario(Persistencia.Usuario)
+-----------------------------------------------------------
+Time: 19/11/2017 04:08:48 
+-----------------------------------------------------------
+Message: Não foi possivel inserir o usuario, erro: Validation failed for one or more entities. See 'EntityValidationErrors' property for more details.
+StackTrace:    em Persistencia.DAO.UsuarioDAO.addUsuario(Usuario usuario) na C:\PSA\LeilaoPSA\LeilaoPSA\Persistencia\DAO\UsuarioDAO.cs:linha 42
+   em Persistencia.GerenciadorDB.addUsuario(Usuario usuario) na C:\PSA\LeilaoPSA\LeilaoPSA\Persistencia\GerenciadorDB.cs:linha 33
+   em Negocio.GerenciadorUsuario.Registrar(Usuario usuario) na C:\PSA\LeilaoPSA\LeilaoPSA\Negocio\GerenciadorUsuario.cs:linha 32
+   em Negocio.LeilaoFachada.RegistrarUsuario(Usuario usuario) na C:\PSA\LeilaoPSA\LeilaoPSA\Negocio\LeilaoFachada.cs:linha 32
+   em LeilaoAPI.Controllers.UsuarioController.Registrar(Usuario usuario) na C:\PSA\LeilaoPSA\LeilaoPSA\LeilaoAPI\Controllers\UsuarioController.cs:linha 39
+Source: Persistencia
+TargetSite: Boolean addUsuario(Persistencia.Usuario)
+-----------------------------------------------------------

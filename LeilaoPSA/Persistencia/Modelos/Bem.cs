@@ -16,7 +16,7 @@ namespace Persistencia
         //}
 
         [Key]
-        [DatabaseGenerated(DatabaseGeneratedOption.None)]
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int id_bem { get; set; }
 
         [Required]
@@ -30,7 +30,7 @@ namespace Persistencia
         [StringLength(30)]
         public string categoria { get; set; }
 
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<LoteBem> LoteBem { get; set; }
+        //[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public ICollection<LoteBem> LoteBem { get; set; }
     }
 }

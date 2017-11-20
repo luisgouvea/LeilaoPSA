@@ -12,6 +12,7 @@ namespace Negocio
         private GerenciadorLeilao gerenciadorLeilao;
         private GerenciadorLote gerenciadorLote;
         private GerenciadorLance gerenciadorLance;
+        private GerenciadorLoteBem gerenciadorLoteBem;
 
         public LeilaoFachada()
         {
@@ -19,6 +20,7 @@ namespace Negocio
             gerenciadorLeilao = new GerenciadorLeilao();
             gerenciadorLote = new GerenciadorLote();
             gerenciadorLance = new GerenciadorLance();
+            gerenciadorLoteBem = new GerenciadorLoteBem();
         }
 
         #region - UsuarioController
@@ -35,9 +37,9 @@ namespace Negocio
         #endregion
 
         #region - LeilaoController
-        public bool CriarLeilao(Leilao leilao)
+        public bool CriarLeilao(Leilao leilao, string natureza, string formaLances)
         {
-            return gerenciadorLeilao.CriarLeilao(leilao);
+            return gerenciadorLeilao.CriarLeilao(leilao, natureza, formaLances);
         }
 
         public List<Leilao> ListarTodosLeilao()
@@ -67,6 +69,13 @@ namespace Negocio
         public List<Lance> ListarTodosLanceByLeilao(int idLeilao)
         {
             return gerenciadorLance.ListarTodosLanceByLeilao(idLeilao);
+        }
+        #endregion
+
+        #region
+        public List<LoteBem> ListarLoteBemByIdLote(int idLote)
+        {
+            return gerenciadorLoteBem.getLoteBensByIdLote(idLote);
         }
         #endregion
     }

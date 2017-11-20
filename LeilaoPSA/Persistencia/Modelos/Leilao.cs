@@ -16,7 +16,7 @@ namespace Persistencia
         //}
 
         [Key]
-        [DatabaseGenerated(DatabaseGeneratedOption.None)]
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int id_leilao { get; set; }
 
         public int? id_lote { get; set; }
@@ -25,8 +25,10 @@ namespace Persistencia
 
         public int? id_enum_forma_lances { get; set; }
 
+        [Column(TypeName = "DateTime2")]
         public DateTime dtHoraInicio { get; set; }
 
+        [Column(TypeName = "DateTime2")]
         public DateTime dtHoraTermino { get; set; }
 
         public virtual EnumFormaLances EnumFormaLances { get; set; }

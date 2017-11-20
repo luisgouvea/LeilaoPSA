@@ -10,7 +10,7 @@ namespace Persistencia
     public partial class LoteBem
     {
         [Key]
-        [DatabaseGenerated(DatabaseGeneratedOption.None)]
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int id_lote_bem { get; set; }
 
         public int? id_lote { get; set; }
